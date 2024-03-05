@@ -1,0 +1,153 @@
+<!DOCTYPE html><!--DTD Document Type dEFINTION-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            position: relative; /* Position relative for absolute positioning of pseudo-elements */
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9e6d8; /* Light brown background color */
+            color: #333;
+        }
+
+        .container::before,
+        .container::after {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #ffdab9; /* Peach color */
+            border-radius: 50%; /* Makes the shape a circle */
+            opacity: 0.5; /* Adjust the opacity as needed */
+        }
+
+        .container::before {
+            top: -100px;
+            left: -100px;
+        }
+
+        .container::after {
+            bottom: -100px;
+            right: -100px;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .recipe-info {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .intro {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .note {
+            font-style: italic;
+            color: #777;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cookie-image {
+            width: 30%;
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 0 10px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Recipe Information -->
+    <div class="container">
+        <div class="recipe-info">
+            <!-- Recipe Name -->
+            <h1>Chocolate Chip Cookies</h1>
+            
+            <!-- Introduction -->
+            <p class="intro">Indulge in the heavenly taste of homemade chocolate chip cookies. These cookies are soft, chewy, and packed with delicious chocolate chips. Perfect for any occasion, whether it's a cozy evening at home or a gathering with friends.</p>
+
+
+            <!-- Description of the Recipe -->
+            <h2>Ingredients</h2>
+            <ul>
+                <li>All-purpose flour (2 1/4 cups)</li>
+                <li>Unsalted butter, softened (1 cup)</li>
+                <li>Granulated sugar (3/4 cup)</li>
+                <li>Brown sugar, packed (3/4 cup)</li>
+                <li>Large eggs (2)</li>
+                <li>Vanilla extract (1 teaspoon)</li>
+                <li>Baking soda (1 teaspoon)</li>
+                <li>Salt (1/2 teaspoon)</li>
+                <li>Semi-sweet chocolate chips (2 cups)</li>
+            </ul>
+            
+            <!-- Method -->
+            <h2>Method</h2>
+            <ol>
+                <li>Adjust the oven temperature to 375°F (190°C) and line a baking sheet with parchment paper.</li>
+                <li>In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until light and fluffy.</li>
+                <li>Lightly beat the softened butter, granulated sugar, and brown sugar together in a large mixing bowl until light and fluffy.</li>
+                <li>Whisk together the baking soda, salt, and all-purpose flour in a separate bowl. Add the dry mixture to the wet ingredients gradually, blending thoroughly after each addition to ensure full inclusion.</li>
+                <li>Once the semi-sweet chocolate chips are uniformly distributed throughout the cookie batter, carefully stir them in.</li>
+                <li>Round tablespoons of dough should be added to the baking sheet that has been lined with parchment paper, making sure that there is enough room between each cookie for expansion during baking.</li>
+                <li>Bake in the preheated oven for 8 to 10 minutes, or until the edges are lightly golden brown.</li>
+                <li>After letting the cookies cool for a short while on the baking sheet, move them to a wire rack to finish cooling.</li>
+                <li>Enjoy your delicious homemade chocolate chip cookies!</li>
+            </ol>
+
+            <!-- Additional Notes -->
+            <p class="note">Enjoy how delicious your homemade chocolate chip cookies taste!
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/05/classic-chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies" class="cookie-image">
+        <img src="https://stressbaking.com/wp-content/uploads/2021/11/chocolate-chip-cookies-21.jpg" alt="Chocolate Chip Cookies" class="cookie-image">
+        <img src="https://sallysbakingaddiction.com/wp-content/uploads/2018/07/crispy-chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies" class="cookie-image">
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        The recipe was lovingly created by Emiko Paras. | &copy; 2024
+    </div>
+</body>
+</html>
