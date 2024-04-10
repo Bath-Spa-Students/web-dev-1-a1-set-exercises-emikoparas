@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Image Gallery</title> <!--Here is the title of the webpage-->
+  <style> 
+    .image-container { /*The design for the picture container div*/
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+    img { /*Here's the photographs style*/
+      max-width: 100%;
+      height: auto;
+      filter: grayscale(100%); /*The images has a grayscale filter used*/
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Light shadow has been used for the images*/
+    }
+    .image-info { /*The style of the image information*/
+      font-style: italic;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body> 
+  <!--A container for the each image-->  
+  <div class="image-container">
+    <!--Image element with the width, title, height, alt soruce attributed and text-->
+    <img src="sunsetbeach.jpg" alt="Sunset on the beach" width="400" height="300" title="Sunset">
+    <p class="image-info">Copyright: Image by Jayson Delos Santos</p>
+  </div>
+  <div class="image-container">
+    <img src="nightcity.jpg" alt="City skyline at night" width="400" height="300" title="City Lights">
+    <p class="image-info">Copyright: Image by Jimmy Liao</p>
+  </div>
+  <div class="image-container">
+    <img src="forestscene.jpg" alt="Forest Landscape" width="400" height="300" title="Forest">
+    <p class="image-info">Copyright: Image by Giona Mason</p>
+  </div>
+</body>
+</html>
+

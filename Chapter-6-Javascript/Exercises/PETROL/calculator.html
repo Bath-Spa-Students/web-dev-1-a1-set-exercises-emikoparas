@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petrol Calculator</title>
+  <link rel="stylesheet" href="style.css"> <!--A link to a external CSS style-->
+</head>
+<body> <!--A calculator container division-->
+  <div class="calculator">
+    <!--A heading and a picture for calculator-->
+    <h1><img src="gas.jpg" alt="Petrol Icon" style="height: 40px; vertical-align: middle;"> Petrol Calculator</h1>
+    <!--Labels to the price per liter of gasoline and number of litres-->
+    <label for="costPerLiter">Cost per liter of petrol:</label>
+    <input type="number" id="costPerLiter" value="1.72">
+    <label for="litersPurchased">Liters purchased:</label>
+    <input type="number" id="litersPurchased" value="0">
+    <button id="calculateButton">Calculate</button> <!--A button that initiate the calculation-->
+    <p id="totalCost">Total cost: <span id="costResult">0</span></p>
+  </div>
+
+  <script src="script.js"></script> <!--Link to a external javascript-->
+</body>
+</html>
+
+
